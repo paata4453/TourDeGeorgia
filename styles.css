@@ -83,32 +83,59 @@ section {
   background: #f9f9f9;
 }
 
+
+
 #home {
+  padding-top: 80px; /* reduced padding */
   background-image: url('images/sl.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
+  
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  color: rgb(168, 15, 15);
+  color: black;
+  text-align: center;
 }
 
 .welcome-to-site {
-  font-size: 50px;
-  text-align: center;
-  margin-top: -450px;
+  margin-top: 0;      /* no gap above */
+  margin-bottom: 80px; /* small gap below */
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  padding: 0 10px;
   color: black;
+  line-height: 1.1;
+  text-align: center;
 }
 
 .welcome-site-p {
-  font-size: larger;
-  text-align: center;
-  margin-top: 10px;
+  max-width: 1000px;
+    text-shadow:
+    -0.7px -0.7px 0 #ffffff,
+     0.7px -0.7px 0 #ffffff,
+    -0.7px  0.7px 0 #ffffff,
+     0.7px  0.7px 0 #ffffff;
+  margin: 0 auto;
+  padding: 12px 15px;
+  border-radius: 8px;
   color: black;
-  max-width: 70vh;
+  line-height: 1.4;
+
+  font-size: 2.5rem;  /* big on desktop */
 }
+
+
+@media (max-width: 600px) {
+  .welcome-site-p {
+    font-size: 1.1rem; /* smaller on mobile */
+    padding: 10px 12px;
+  }
+}
+
+
+
 
 .footer {
   background-color: rgb(42, 46, 48);
