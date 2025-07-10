@@ -15,7 +15,7 @@ body {
 .navbar {
   position: sticky;
   top: 0;
-  background-color: #eaeaea;
+  background-color: #dfdfdf;
   display: flex;
   align-items: center;
   justify-content: space-between;
