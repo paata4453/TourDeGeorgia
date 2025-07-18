@@ -12,6 +12,64 @@ body {
   padding: 0 15px;
 }
 
+
+
+.whatsapp-chat {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #25D366;
+  padding: 8px 12px;
+  border-radius: 30px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-chat:hover {
+  background-color: #1ebe57;
+}
+
+.whatsapp-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn img {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-text {
+  user-select: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+
+@media (max-width: 600px) {
+  .whatsapp-chat {
+    padding: 4px 10px;
+  }
+  
+  .whatsapp-btn img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .whatsapp-text {
+    font-size: 12px;
+  }
+}
+
+
+
 .navbar {
   position: sticky;
   top: 0;
